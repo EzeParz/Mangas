@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logoManga.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/estilomanga.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Manga Zeco</title>
+  </head>
+  <body> 
+    <p class="slogan">Descubre los mejores Mangas</p>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container">
+    <a class="navbar-brand" href="./index.html">
+      <img class="logoManga" src="./img/logoManga.png" alt="Logo de Manga Zeco">
+    </a>
+
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+      
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link nav-li-animacion active" href="./index.html">Inicio</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link nav-li-animacion" href="./pages/directorio.html">Directorio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-li-animacion" href="./pages/noticias.html">Noticias</a>
+        </li>
+        <li class="nav-item" id="btnFavoritos" style="display: none;">
+          <a href="./pages/favoritos.html" class="nav-link nav-li-animacion">Favoritos</a>
+        </li>
+        <!-- SOLO MOVIL -->
+       <li class="nav-item d-md-none">
+         <a class="nav-link"
+             data-bs-toggle="modal"
+             data-bs-target="#loginModal">
+           <img id="avatarMobile" class="iconoProfile" src="./img/iconoProfile.svg" alt="Perfil">
+         </a>
+       </li>
+      </ul> 
+      <a class="nav-link d-md-flex d-none align-items-center ms-auto " data-bs-target="#loginModal" data-bs-toggle="modal" href="#">
+        <img id="avatarDesktop" class="iconoProfile" src="./img/iconoProfile.svg" alt="Perfil">
+      </a>     
+    </div>
+  </div>
+    </nav>
+    <header class="contenedor-yami">
+      <div class="container-hd">
+        <div class="container-hd-md header-animacion">
+
+            <img src="./img/header.png" alt="Imagen Central">
+
+        </div>
+      </div>
+    </header>
+    <main class="contenedor-yami" >
+      <div class="contenedor-img-inicio">
+        <div class="contenedor-img-inicio-1 bg-dark">
+          <div><i class="bi bi-book icono-violeta"></i></div>
+          <div class="contenedor-img-inicio-2">
+            <h2>+2500</h2>
+            <h3>MANGAS</h3>
+          </div>
+        </div>
+        <div class="contenedor-img-inicio-1 bg-dark">
+          <div><i class="bi bi-star icono-violeta"></i></div>
+          <div class="contenedor-img-inicio-2">
+            <h2>RANKINGS</h2>
+          </div>
+        </div>
+        <div class="contenedor-img-inicio-1 bg-dark">
+          <div><i class="bi bi-lightning-charge icono-violeta"></i></div>
+          <div class="contenedor-img-inicio-2">
+            <h2>NOTICIAS</h2>
+            <h3>CADA DIA</h3>
+          </div>
+        </div>
+        <div class="contenedor-img-inicio-1 bg-dark">
+          <div><i class="bi bi-fire icono-rojo"></i></div>
+          <div class="contenedor-img-inicio-2">
+            <h2>TENDENCIAS</h2>
+          </div>
+        </div>
+      </div>
+      <article class=" article-yami bg-dark">
+
+        <h2 class="titulo-seccion">Populares del Día</h2>
+        <div class="swiper-contenedor">
+          <div class="swiper-button-prev"></div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="populares">
+            </div>
+          
+          
+          <!-- PAGINACION -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        </div>
+      </article>
+
+      <article class="article-yami bg-dark">
+        <h2 class="titulo-seccion">Ultimos Actualizados</h2>
+        <div class="swiper-contenedor">
+          <div class="swiper-button-prev"></div>
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper" id="actualizados">
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          </div>
+      </article>
+
+      <article class="article-yami bg-dark cnt-ten">
+        <h2 class="titulo-seccion">Noticias</h2>
+
+    <div class="contenedor-noticias-1">
+        <div class="cnt-not-25">
+          <div class="img-not"><img class="img-not-1" src="../img/img-not/1.webp" alt=""></div>
+            <div class="cnt-not-2">
+              <a href="./pages/noticias/not-1.html">El poder del gacha llega al isekai: El anime Gacha Girls Corps revela su elenco, staff y estreno para enero de 2027</a>
+            </div>
+        </div>
+        <div class="cnt-not-25">
+          <div class="img-not"><img class="img-not-1" src="../img/img-not/2.webp" alt=""></div>
+            <div class="cnt-not-2">
+              <a href="./pages/noticias/not-2.html">El anime The Fledgling Demon Lord's Starter Shop confirma su estreno para enero 2027</a>
+            </div>
+        </div>
+        <div class="cnt-not-25">
+          <div class="img-not"><img class="img-not-1" src="../img/img-not/3.webp" alt=""></div>
+            <div class="cnt-not-2">
+              <a href="./pages/noticias/not-3.html">El manga sobre mahjong Gokigenyo, Ikkyoku Ikaga? tendrá adaptación al anime</a>
+            </div>
+        </div>
+        <a href="./pages/noticias.html">Mas noticias...</a>
+      </div>
+      </article>
+
+      </main>
+      <footer class="bg-dark">
+
+        <div class="contenedor-yami contenedor-footer">
+          
+          <div class="contenedor-footer-manga">
+            <img class="logoFooter" src="./img/logoManga.png" alt="Logo Manga Zeco">
+          </div>
+          <div class="contenedor-link-footer">
+            <h5>Recursos</h5>
+            <a href="./pages/error-404.html">FAQ</a>
+            <a href="./pages/error-404.html">Politicas de Privacidad</a>
+            <a href="./pages/error-404.html"></a>
+          </div>
+          <div class="contenedor-link-footer">
+          <h5>Navegacion</h5>
+
+          <a href="./index.html">Inicio</a>
+          <a href="./pages/directorio.html">Directorio</a>
+          <a href="./pages/noticias.html">Noticias</a>
+
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="text-secondary">© 2026 Ezequiel Parziale. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      <div class="modal fade" id="loginModal" tabindex="-1">
+    
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content bg-dark text-light">
+
+            <div class="modal-header">
+
+                <h5 id="tituloModal" class="modal-title">Iniciar Sesión</h5>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formLogin">
+
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Usuario</label>
+                        <input id="usuario" type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input id="password" type="password" class="form-control">
+                    </div>
+
+                    <button id="btnPress" type="submit" class="btn btn-warning w-100">
+                        Ingresar
+                    </button>
+
+                </form>
+
+
+                <div id="logoutContainer" style="display: none;">
+
+                    <p class="text-center mb-3">
+                        Usuario <br><br>
+                        <strong>Admin</strong><br><br>
+                    </p>
+
+                    <button id="btnLogout" type="button" class="btn btn-danger w-100">
+                        Cerrar sesión
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-propio.js"></script>
+    <script src="./js/index-api-slides.js"></script>
+    <script src="./js/auth.js"></script>
+
+</body>
+</html>
