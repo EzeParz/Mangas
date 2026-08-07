@@ -757,6 +757,9 @@ footer{
     #contenedor-directorio{
         justify-content: center;
     }
+    #contenedor-favoritos{
+        justify-content: center;
+    }
 }
 body {
     overflow-x: hidden !important;
@@ -909,6 +912,9 @@ body {
     .cnt-not{
         flex-direction:column;
         align-items:flex-start;
+    }
+    .cnt-not-25{
+        display: block;
     }
 
     .img-not{
