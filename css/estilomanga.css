@@ -1060,7 +1060,18 @@ body {
 .contenedor-favoritos{
     display: none;
 }
+.error404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem 0;
+}
+
 .error404 img{
+    max-width: 90%;
     width: 100%;
-    object-fit:contain
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
