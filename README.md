@@ -1,6 +1,6 @@
 # MangaZeco 📚
 
-MangaZeco es una página web pensada para descubrir y explorar mangas de una forma simple y visual.
+MangaZeco es una página web pensada para descubrir y explorar mangas de una forma simple.
 
 La desarrollé como proyecto de frontend usando principalmente **HTML, CSS y JavaScript**, trabajando con contenido dinámico, favoritos, rankings, búsqueda y páginas individuales para cada manga.
 
@@ -11,9 +11,9 @@ La desarrollé como proyecto de frontend usando principalmente **HTML, CSS y Jav
 
 ## Sobre MangaZeco
 
-La idea de MangaZeco nació como una plataforma donde poder buscar mangas, ver información de cada uno y guardar favoritos.
+La idea de MangaZeco nació como una plataforma donde poder buscar mangas, ver información de cada uno y guardar en favoritos.
 
-Al principio, el proyecto estaba pensado para trabajar con la **API de Jikan**, obteniendo los datos directamente desde allí.
+Al principio, el proyecto estaba pensado para trabajar con la **API de Jikan**, obteniendo los datos de ahí.
 
 Con el tiempo empecé a tener problemas con la API y algunas partes del sitio dejaron de funcionar correctamente. Para poder mantener el proyecto estable, decidí adaptar el código y utilizar un archivo **JSON local** que simula los datos que antes recibía desde la API.
 
@@ -55,7 +55,7 @@ Aunque ahora los datos son locales, la página sigue utilizando `fetch()` y Java
 
 Una parte importante del proyecto está generada directamente desde JavaScript.
 
-Por ejemplo, el directorio obtiene la información desde el JSON y crea las cards automáticamente. También permite buscar mangas, ordenarlos y cargar más contenido sin tener todo escrito directamente en el HTML.
+Por ejemplo, el directorio obtiene la información desde el JSON y crea las cards automáticamente. También permite buscar mangas, ordenarlos y cargar más contenido sin tener todo escrito en el HTML.
 
 Las páginas individuales también funcionan de forma dinámica.
 
@@ -74,8 +74,8 @@ JavaScript obtiene ese ID y busca en los datos qué manga tiene que mostrar.
 Para probar el inicio de sesión del proyecto, podés utilizar las credenciales predeterminadas:
 
 ```text
-Usuario: admin
-Contraseña: admin
+Usuario: admin 
+Contraseña: admin 
 ```
 
 Estas credenciales forman parte de una simulación de login realizada completamente desde frontend.
@@ -87,8 +87,6 @@ Estas credenciales forman parte de una simulación de login realizada completame
 Para los favoritos utilicé `localStorage`, de forma que los mangas guardados no desaparezcan cada vez que se recarga la página.
 
 También hice una simulación de login completamente desde frontend.
-
-No utiliza un backend ni autenticación real, ya que la idea era practicar el manejo de datos, sesiones y estados desde JavaScript.
 
 ---
 
@@ -116,20 +114,6 @@ Mangas/
 
 ---
 
-## Ejecutar el proyecto
-
-Podés clonar el repositorio con:
-
-```bash
-git clone https://github.com/EzeParz/Mangas.git
-```
-
-Después recomiendo abrirlo utilizando un servidor local, como **Live Server** en Visual Studio Code.
-
-Esto es necesario porque algunas partes del proyecto utilizan `fetch()` para cargar archivos JSON.
-
----
-
 ## Lo que trabajé en este proyecto
 
 Con MangaZeco pude practicar y aplicar varias cosas de frontend, entre ellas:
@@ -146,18 +130,6 @@ Con MangaZeco pude practicar y aplicar varias cosas de frontend, entre ellas:
 - Uso de librerías externas.
 - Organización de JavaScript en distintos archivos.
 - Deploy con Vercel.
-
----
-
-## Próximas mejoras
-
-Algunas cosas que me gustaría mejorar más adelante:
-
-- Volver a conectar el proyecto con una API externa.
-- Agregar filtros por género o puntuación.
-- Mejorar el sistema de búsqueda.
-- Implementar una autenticación real con backend.
-- Permitir sincronizar favoritos entre dispositivos.
 
 ---
 
