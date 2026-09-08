@@ -56,7 +56,7 @@ let usuarios = [];
 async function cargarUsuarios() {
     const respuesta = await fetch("../data/usuarios.json");
     usuarios = await respuesta.json();
-    console.log(usuarios);
+
 }
 
 cargarUsuarios();
@@ -77,7 +77,7 @@ document.getElementById("btnPress").addEventListener("click", (e) => {
 
         actualizarInterfaz();
 
-        console.log("Sesión iniciada");
+
 
         const modal = bootstrap.Modal.getInstance(
         document.getElementById("loginModal")
