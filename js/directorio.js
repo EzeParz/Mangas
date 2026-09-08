@@ -111,3 +111,4 @@ inputBuscar.addEventListener("keydown", (e) => {
 
     mostrarMangas(resultados);
 });
+

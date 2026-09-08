@@ -1049,6 +1049,11 @@ body {
     .error404{
         display: none;
     }
+    #fav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .error404-celu{
         display: flex;
     }
