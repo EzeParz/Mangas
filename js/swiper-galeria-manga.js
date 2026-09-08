@@ -43,7 +43,7 @@ fetch(`https://api.jikan.moe/v4/manga/${idGaleria}/pictures`)
         contenedorManga.appendChild(perfilManga1);
 
         new Swiper(".swiperGaleria", {
-/*             slidesPerView: 1,*/
+
             spaceBetween: 20, 
 
             navigation: {

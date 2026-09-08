@@ -14,7 +14,7 @@ function obtenerRanking(manga) {
     )?.rank ?? "-";
 }
 
-// Dibuja las cards
+// Arma las cards
 function mostrarMangas(lista, nuevaCarga = false) {
 
     const inicio = (paginaActual - 1) * mangasPorPagina;

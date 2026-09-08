@@ -5,16 +5,17 @@ fetch("../data/topManga300.json")
     .then(respuesta => respuesta.json())
     .then(mangas => {
         mangas = mangas.filter(manga => manga.format === "MANGA");
-        // Devuelve el ranking de popularidad de AniList
+
+        // Devuelve el ranking de popularidad
         function obtenerRanking(manga) {
             return manga.rankings.find(r =>
                 r.type === "POPULAR" && r.allTime
             )?.rank ?? 999999;
         }
 
-        // ==========================
+
         // POPULARES DEL DÍA
-        // ==========================
+
 
         const populares = [...mangas]
             .sort((a, b) => obtenerRanking(a) - obtenerRanking(b))
@@ -49,9 +50,9 @@ fetch("../data/topManga300.json")
 
         iniciarSwiper1();
 
-        // ==========================
+  
         // ÚLTIMOS ACTUALIZADOS
-        // ==========================
+ 
 
         const top100 = [...mangas]
             .sort((a, b) => obtenerRanking(a) - obtenerRanking(b))
